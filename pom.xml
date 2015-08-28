@@ -8,5 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>boot-admin-server</module>
+        <module>cloud-config-server</module>
+        <module>cloud-registry-server</module>
     </modules>
 </project>
