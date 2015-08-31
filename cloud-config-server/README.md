@@ -18,7 +18,7 @@ Please change git url in application.properties
            <version>1.0.2.RELEASE</version>
     </dependency>
 
-2. in your bootstrap.properties add following code:
+2. Bootstrap Environment from server. In your bootstrap.properties add following code:
 
 
     spring.cloud.config.uri: http://myconfigserver.com:8080/
@@ -26,11 +26,14 @@ Please change git url in application.properties
 3. verify your properties:
 
 
-    $ curl http://localhost:8080/app_name.properties
+    $ curl http://localhost:8080/appname.properties
 
+4. add @RefreshScope for your bean
+5. POST to /refresh to refresh the configuration
 ### how to write properties file
 
 1. application.properties: global properties for all apps
-2. app_name.properties: app properties
-3. app_name-profile.properties: app profile properties
+2. appname.properties: app properties
+3. appname-profile.properties: app profile properties
+
 
