@@ -16,11 +16,6 @@
     <name>cloud-config-server</name>
     <description>Spring Boot Cloud Config Server</description>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
