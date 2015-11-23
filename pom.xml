@@ -10,21 +10,27 @@
         <module>boot-admin-server</module>
         <module>cloud-config-server</module>
         <module>cloud-registry-server</module>
+        <module>boot-consul-server</module>
     </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-framework-bom</artifactId>
-                <version>4.2.1.RELEASE</version>
+                <version>4.2.3.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.3.0.M5</version>
+                <version>1.3.0.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
