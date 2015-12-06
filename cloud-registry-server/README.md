@@ -21,9 +21,10 @@ Eureka Server
            client:
              serviceUrl:
                defaultZone: http://localhost:8761/eureka/
-
+    
 or application.properties
 
           eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
 
+Please notice: you can add multi url in defaultZone to setup cluster, such as "http://dsc01:8761/eureka/,http://dsc02:8762/eureka/" for both client and server. 
 3. add @EnableDiscoveryClient for your Spring Boot Application
