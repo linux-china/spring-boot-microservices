@@ -26,7 +26,7 @@ Please change git url in application.properties
 3. verify your properties:
 
 
-    $ curl http://localhost:8080/appname.properties
+    $ curl http://localhost:8080/app_name/master
 
 4. add @RefreshScope for your bean
 5. POST to /refresh to refresh the configuration
