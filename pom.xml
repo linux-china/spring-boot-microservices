@@ -19,7 +19,7 @@
         <spring.version>4.2.6.RELEASE</spring.version>
         <spring-boot.version>1.3.5.RELEASE</spring-boot.version>
         <spring-cloud.version>Brixton.RELEASE</spring-cloud.version>
-        <platform-bom.version>2.0.4.RELEASE</platform-bom.version>
+        <platform-bom.version>2.0.5.RELEASE</platform-bom.version>
     </properties>
 
     <dependencyManagement>
