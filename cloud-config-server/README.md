@@ -15,7 +15,7 @@ Please change git url in application.properties
     <dependency>
            <groupId>org.springframework.cloud</groupId>
            <artifactId>spring-cloud-starter-config</artifactId>
-           <version>1.0.2.RELEASE</version>
+           <version>1.1.0.RELEASE</version>
     </dependency>
 
 2. Bootstrap Environment from server. In your bootstrap.properties add following code:
@@ -31,6 +31,11 @@ Please change git url in application.properties
 
 4. add @RefreshScope for your bean
 5. POST to /refresh to refresh the configuration
+
+### Testing
+
+     $ http http://localhost:9380/demo/default/master
+
 ### how to write properties file
 
 1. application.properties: global properties for all apps
