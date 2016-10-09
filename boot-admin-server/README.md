@@ -10,7 +10,7 @@ Admin UI for administration of spring boot applications
     <dependency>
        <groupId>de.codecentric</groupId>
        <artifactId>spring-boot-admin-starter-client</artifactId>
-       <version>1.2.3</version>
+       <version>1.4.2</version>
     </dependency>
 
 2. If you want to enable JMX-HTTP support, such log view, please add Jolokia dependency:
