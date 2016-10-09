@@ -16,10 +16,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.version>4.3.2.RELEASE</spring.version>
-        <spring-boot.version>1.4.0.RELEASE</spring-boot.version>
-        <spring-cloud.version>Brixton.SR4</spring-cloud.version>
-        <platform-bom.version>2.0.6.RELEASE</platform-bom.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
+        <spring-boot.version>1.4.1.RELEASE</spring-boot.version>
+        <spring-cloud.version>Camden.RELEASE</spring-cloud.version>
+        <platform-bom.version>Athens-RELEASE</platform-bom.version>
     </properties>
 
     <dependencyManagement>
