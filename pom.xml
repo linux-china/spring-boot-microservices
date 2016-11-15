@@ -11,6 +11,7 @@
         <module>cloud-config-server</module>
         <module>cloud-registry-server</module>
         <module>boot-consul-server</module>
+        <module>boot-zookeeper-server</module>
     </modules>
 
     <properties>
