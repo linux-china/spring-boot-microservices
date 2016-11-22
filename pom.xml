@@ -10,6 +10,7 @@
         <module>boot-admin-server</module>
         <module>cloud-config-server</module>
         <module>cloud-registry-server</module>
+        <module>cloud-data-flow-server</module>
         <module>boot-consul-server</module>
         <module>boot-zookeeper-server</module>
     </modules>
