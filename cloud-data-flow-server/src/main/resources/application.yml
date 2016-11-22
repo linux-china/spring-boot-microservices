@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cloud-data-flow-server
+
+server:
+  port: 9191
