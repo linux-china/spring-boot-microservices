@@ -12,7 +12,7 @@ Eureka Server
          <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-eureka</artifactId>
-                <version>1.0.3.RELEASE</version>
+                <version>1.2.3.RELEASE</version>
          </dependency>
 2. add following code in your application.yml
 
