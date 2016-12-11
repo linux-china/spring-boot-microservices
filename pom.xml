@@ -14,6 +14,7 @@
         <module>boot-consul-server</module>
         <module>boot-zookeeper-server</module>
         <module>microapp-1</module>
+        <module>microapp-2</module>
     </modules>
 
     <properties>
