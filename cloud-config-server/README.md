@@ -15,22 +15,21 @@ Please change git url in application.properties
     <dependency>
            <groupId>org.springframework.cloud</groupId>
            <artifactId>spring-cloud-starter-config</artifactId>
-           <version>1.1.0.RELEASE</version>
+           <version>1.2.2.RELEASE</version>
     </dependency>
 
 2. Bootstrap Environment from server. In your bootstrap.properties add following code:
 
 
-    spring.cloud.config.uri: http://myconfigserver.com:8080/
+    spring.cloud.config.uri: http://localhost:9380/
 
 3. verify your properties:
 
 
-    $ curl http://localhost:8080/app_name/master
-    $ curl http://localhost:8080/app_name/production/master
+    $ curl http://localhost:9380/demo/master
+    $ curl http://localhost:9380/demo/prod/master
 
 4. add @RefreshScope for your bean
-5. POST to /refresh to refresh the configuration
 
 ### Testing
 
