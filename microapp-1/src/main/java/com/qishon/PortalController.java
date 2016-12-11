@@ -17,7 +17,17 @@ public class PortalController {
     private String nick;
 
     @GetMapping("/")
-    public String welcome() {
+    public String index() {
         return "hello" + nick;
+    }
+
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "welcome";
+    }
+
+    @GetMapping("/demo/welcome")
+    public String welcome2() {
+        return "welcome";
     }
 }
