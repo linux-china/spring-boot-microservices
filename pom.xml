@@ -15,6 +15,7 @@
         <module>boot-zookeeper-server</module>
         <module>microapp-1</module>
         <module>microapp-2</module>
+        <module>zuul-proxy</module>
     </modules>
 
     <properties>
