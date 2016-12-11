@@ -28,6 +28,6 @@ public class PortalController {
 
     @GetMapping("/demo/welcome")
     public String welcome2() {
-        return "welcome";
+        return "welcome2";
     }
 }
