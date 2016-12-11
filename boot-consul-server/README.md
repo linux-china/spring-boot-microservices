@@ -9,4 +9,5 @@ Spring Boot Consul Registry Server
 
 ### Reference
 
-* consul options: https://www.consul.io/docs/agent/options.html
+* Spring Cloud Consul: http://cloud.spring.io/spring-cloud-consul/
+* Consul options: https://www.consul.io/docs/agent/options.html
