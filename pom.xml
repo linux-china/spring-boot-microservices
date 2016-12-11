@@ -13,6 +13,7 @@
         <module>cloud-data-flow-server</module>
         <module>boot-consul-server</module>
         <module>boot-zookeeper-server</module>
+        <module>microapp-1</module>
     </modules>
 
     <properties>
