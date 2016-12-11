@@ -1,0 +1,24 @@
+server:
+  port: 5678
+management:
+  port: 5679
+spring:
+  application:
+    name: mvnsearch
+
+sidecar:
+  port: 80
+  health-uri: http://www.mvnsearch.org/health.json
+
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    mvnsearch:
+      path: /mvnsearch/**
+      url: http://www.mvnsearch.org
+      stripPrefix: true
+
