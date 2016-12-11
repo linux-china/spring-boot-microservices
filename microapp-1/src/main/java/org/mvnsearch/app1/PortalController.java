@@ -1,4 +1,4 @@
-package com.qishon;
+package org.mvnsearch.app1;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

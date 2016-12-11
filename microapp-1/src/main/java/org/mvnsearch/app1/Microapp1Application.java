@@ -1,4 +1,4 @@
-package com.qishon;
+package org.mvnsearch.app1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
