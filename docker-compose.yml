@@ -10,6 +10,10 @@ services:
         - "8400:8400"
         - "8500:8500"
         - "8600:53/udp"
+  redis:
+      image: redis
+      ports:
+        - "6379:6379"
   zookeeper:
       image: jplock/zookeeper
       ports:
