@@ -41,4 +41,14 @@ Please change git url in application.properties
 2. appname.properties: app properties
 3. appname-profile.properties: app profile properties
 
+### Spring Cloud CLI Launcher
+
+please copy configserver.yml to $HOME/.spring-cloud/configserver.yml and execute:
+
+     $ spring cloud configserver
+
+### References
+
+* https://spring.io/blog/2016/11/02/introducing-the-spring-cloud-cli-launcher
+
 
