@@ -15,6 +15,7 @@
         <module>microapp-2</module>
         <module>zuul-proxy</module>
         <module>sidecar-1</module>
+        <module>task-demo</module>
     </modules>
 
     <properties>
