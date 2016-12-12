@@ -12,6 +12,12 @@ please install Java 8 JCE: http://www.oracle.com/technetwork/java/javase/downloa
 * Spring Boot Admin Server
 * Spring Cloud DataFlow Server
 
+### How to start services
+
+* Start Eureka
+* Start Config Server（integrated with eureka)
+* Start Spring Boot Admin (integrated with eureka)
+
 ###Spring Cloud Consul
 
 #### Startup
