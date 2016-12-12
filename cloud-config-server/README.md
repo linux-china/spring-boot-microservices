@@ -6,7 +6,7 @@ Spring Cloud Config provides server and client-side support for externalized con
 
 Please change git url in application.properties
 
-### how to use
+### How to use
 
 * please add dependency in your pom.xml.
 ```xml
@@ -48,6 +48,23 @@ Config Server with Git adopts following rules to get configuration:
 1. application.properties: global properties for all apps
 2. appname.properties: app properties
 3. appname-profile.properties: app profile properties
+
+### How to integrate with Eureka
+
+* Add spring-cloud-starter-eureka dependency in your pom.xml:
+```xml
+ <dependency>
+   <groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-starter-eureka</artifactId>
+ </dependency>
+```
+* Add @EnableDiscoveryClient in your applictaion
+* add property in the applicaton.properties
+```properties
+eureka.instance.prefer-ip-address=true
+eureka.client.fetch-registry=false
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+```
 
 ### Spring Cloud CLI Launcher
 
