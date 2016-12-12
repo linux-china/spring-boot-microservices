@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  consul:
+      image: consul
+      ports:
+        - "8300:8300"
+        - "8301:8301"
+        - "8302:8302"
+        - "8400:8400"
+        - "8500:8500"
+        - "8600:53/udp"
+  zookeeper:
+      image: jplock/zookeeper
+      ports:
+        - "2181:2181"
+        - "2888:2888"
+        - "3888:3888"
