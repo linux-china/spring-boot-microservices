@@ -72,4 +72,7 @@ please copy configserver.yml to $HOME/.spring-cloud/configserver.yml and execute
 
      $ spring cloud configserver
 
+### References
+
+* Spring Config Server: http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html
 
