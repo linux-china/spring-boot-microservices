@@ -1,39 +1,50 @@
 Spring Boot Admin Server
 ==================================
-Admin UI for administration of spring boot applications
+Admin UI for administration of spring boot applications.
 
 ### how to use
 
-1. please add following dependency in your application's pom.xml:
-
-
+* please add following dependency in your application's pom.xml:
+```xml
     <dependency>
        <groupId>de.codecentric</groupId>
        <artifactId>spring-boot-admin-starter-client</artifactId>
        <version>1.4.4</version>
     </dependency>
-
-2. If you want to enable JMX-HTTP support, such log view, please add Jolokia dependency:
-
-
+```
+* If you want to enable JMX-HTTP support, such log view, please add Jolokia dependency:
+```xml
     <dependency>
            <groupId>org.jolokia</groupId>
            <artifactId>jolokia-core</artifactId>
     </dependency>
+```
+* Add JMX support in your logback-spring.xml:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <springProperty scope="context" name="logging.file" source="logging.file"/>
+    <springProperty scope="context" name="logging.path" source="logging.path"/>
+    <springProperty scope="context" name="spring.application.name" source="spring.application.name"/>
+    <property name="LOG_FILE" value="${logging.path:-.}/${logging.file:-${spring.application.name:-spring}.log}"/>
 
-then add jmx support in your logback.xml:
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <jmxConfigurator/>
 
-    <configuration>
-        <jmxConfigurator/>
-        .....
-    </configuration>
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
 
-1. add following pair in your application.properties
-
-
-     spring.boot.admin.url=http://localhost:8888
-2. open browser to visit boot admin server
+</configuration>
+```
+* Add following pair in your application.properties
+```properties
+     spring.boot.admin.url=http://localhost:9761
+```
+* Open browser to visit boot admin server: http://localhost:9761
 
 ### references
 
-*  https://github.com/codecentric/spring-boot-admin
+* Spring Boot Admin Docs: http://codecentric.github.io/spring-boot-admin/1.4.4/
+*  Spring Boot Admin Git: https://github.com/codecentric/spring-boot-admin
