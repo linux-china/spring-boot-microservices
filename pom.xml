@@ -11,7 +11,6 @@
         <module>cloud-config-server</module>
         <module>cloud-registry-server</module>
         <module>cloud-data-flow-server</module>
-        <module>boot-zookeeper-server</module>
         <module>microapp-1</module>
         <module>microapp-2</module>
         <module>zuul-proxy</module>
