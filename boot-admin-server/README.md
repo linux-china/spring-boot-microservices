@@ -9,15 +9,8 @@ Spring Boot Admin Server integrats with Eureka to fetch applications.
 * Start Spring Boot Admin Server.
 
 ### How to use in applications
+Spring Boot Admin has been integrated with Eureka Registry Server, and Boot Admin will fetch all applications from registry server.
 
-* please add following dependency in your application's pom.xml:
-```xml
-    <dependency>
-       <groupId>de.codecentric</groupId>
-       <artifactId>spring-boot-admin-starter-client</artifactId>
-       <version>1.4.4</version>
-    </dependency>
-```
 * If you want to enable JMX-HTTP support, such log view, please add Jolokia dependency:
 ```xml
     <dependency>
@@ -44,11 +37,7 @@ Spring Boot Admin Server integrats with Eureka to fetch applications.
 
 </configuration>
 ```
-* Add following pair in your application.properties
-```properties
-     spring.boot.admin.url=http://localhost:9761
-```
-* Open browser to visit boot admin server: http://localhost:9761
+* Open browser to visit boot admin server and check: http://localhost:9761
 
 ### references
 
