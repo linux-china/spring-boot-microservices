@@ -35,3 +35,4 @@ Consul Key/Value支持的Spring config Server目录结构如下：
 * Spring Cloud: http://cloud.spring.io/spring-cloud-static/Camden.SR3/
 * Spring Cloud Netflix: http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.2.3.RELEASE/
 * Spring Cloud Consul: http://cloud.spring.io/spring-cloud-consul/
+* Spring Cloud ZooKeeper: http://cloud.spring.io/spring-cloud-zookeeper/spring-cloud-zookeeper.html
