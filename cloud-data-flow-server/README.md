@@ -3,7 +3,7 @@ Spring Cloud Data Flow Server
 Spring Cloud DataFlow Server for Stream and Task/Batch Applications.
 
 ### Development
-Please visit  http://localhost:9191/dashboard/index.html after start.
+Please visit  http://localhost:9393/dashboard/index.html after start.
 
 ### Reference
 
