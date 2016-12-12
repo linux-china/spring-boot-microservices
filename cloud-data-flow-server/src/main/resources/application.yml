@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-data-flow-server
+    name: dataflow
 
 server:
-  port: 9191
+  port: 9393
