@@ -20,3 +20,10 @@ services:
         - "2181:2181"
         - "2888:2888"
         - "3888:3888"
+  mysql:
+      image: mysql
+      ports:
+        - "3306:3306"
+      environment:
+         MYSQL_ROOT_PASSWORD: 123456
+         MYSQL_DATABASE: spring_cloud
