@@ -4,7 +4,7 @@ Spring Cloud Config provides server and client-side support for externalized con
 
 ### Settings
 
-Please change git url in application.properties
+Please change git url in application.properties, and you can check by http://localhost:8888/configserver/default
 
 ### How to use
 
