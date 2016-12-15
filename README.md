@@ -18,6 +18,12 @@ please install Java 8 JCE: http://www.oracle.com/technetwork/java/javase/downloa
 * Start Config Server（integrated with eureka)
 * Start Spring Boot Admin (integrated with eureka)
 
+### Maven plugins
+
+* maven-compiler-plugin: 1.8 compile
+* spring-boot-maven-plugin: build-info
+* git-commit-id-plugin: git full mode
+
 ###Spring Cloud Consul
 
 #### Startup
