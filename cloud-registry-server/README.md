@@ -30,3 +30,9 @@ or application.properties
 Please notice: you can add multi url in defaultZone to setup cluster, such as "http://dsc01:8761/eureka/,http://dsc02:8762/eureka/" for both client and server. 
 
 * Add @EnableDiscoveryClient for your Spring Boot Application
+
+### metadata meta
+You can add metadata for Eureka instance, such as following:
+```properties
+  eureka.instance.metadata-map.management.port=${management.port:-${server.port}}
+```
