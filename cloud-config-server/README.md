@@ -72,6 +72,12 @@ please copy configserver.yml to $HOME/.spring-cloud/configserver.yml and execute
 
      $ spring cloud configserver
 
+### 支持的git url
+
+* file: file:///${user.home}/config-repo
+* git https url: https://github.com/myorg/{application}
+* git url: git@gitlab.yourdomain.com:myorg/config-repo
+
 ### References
 
 * Spring Config Server: http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html
