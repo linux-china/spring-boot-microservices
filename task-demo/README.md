@@ -18,3 +18,7 @@ Spring Cloud Task就是执行一个短的任务，也就是启动JVM进程后执
 ### 注意
 
 * 和Cron不一样，那个驻留定时执行
+
+### References
+
+* 常见Task: https://github.com/spring-cloud-task-app-starters
