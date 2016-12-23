@@ -7,4 +7,5 @@ Please visit  http://localhost:9393/dashboard/index.html after start.
 
 ### Reference
 
-* http://docs.spring.io/spring-cloud-dataflow/docs/1.0.1.RELEASE/reference/html/
+* DataFlow Server: http://docs.spring.io/spring-cloud-dataflow/docs/1.0.1.RELEASE/reference/html/
+* Spring Cloud Stream App Starters: http://cloud.spring.io/spring-cloud-stream-app-starters/
