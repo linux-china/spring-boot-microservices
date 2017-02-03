@@ -21,10 +21,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.version>4.3.5.RELEASE</spring.version>
-        <spring-boot.version>1.4.3.RELEASE</spring-boot.version>
+        <spring.version>4.3.6.RELEASE</spring.version>
+        <spring-boot.version>1.5.1.RELEASE</spring-boot.version>
         <spring-cloud.version>Camden.SR4</spring-cloud.version>
-        <platform-bom.version>Athens-SR2</platform-bom.version>
+        <platform-bom.version>Athens-SR3</platform-bom.version>
     </properties>
 
 
