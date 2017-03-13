@@ -23,7 +23,7 @@
         <java.version>1.8</java.version>
         <spring.version>4.3.7.RELEASE</spring.version>
         <spring-boot.version>1.5.2.RELEASE</spring-boot.version>
-        <spring-cloud.version>Camden.SR5</spring-cloud.version>
+        <spring-cloud.version>Camden.SR6</spring-cloud.version>
         <platform-bom.version>Brussels-SR1</platform-bom.version>
     </properties>
 
