@@ -21,10 +21,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.version>4.3.7.RELEASE</spring.version>
-        <spring-boot.version>1.5.2.RELEASE</spring-boot.version>
+        <spring.version>4.3.8.RELEASE</spring.version>
+        <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
         <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
-        <platform-bom.version>Brussels-SR1</platform-bom.version>
+        <platform-bom.version>Brussels-SR2</platform-bom.version>
     </properties>
 
 
