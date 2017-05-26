@@ -23,7 +23,7 @@
         <java.version>1.8</java.version>
         <spring.version>4.3.8.RELEASE</spring.version>
         <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
-        <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Dalston.SR1</spring-cloud.version>
         <platform-bom.version>Brussels-SR2</platform-bom.version>
     </properties>
 
