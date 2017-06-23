@@ -41,5 +41,6 @@ Spring Boot Admin has been integrated with Eureka Registry Server, and Boot Admi
 
 ### references
 
+* Spring Boot Admin Security: https://dzone.com/articles/a-look-at-spring-boot-admin
 * Spring Boot Admin Docs: http://codecentric.github.io/spring-boot-admin/1.4.4/
-*  Spring Boot Admin Git: https://github.com/codecentric/spring-boot-admin
+* Spring Boot Admin Git: https://github.com/codecentric/spring-boot-admin
