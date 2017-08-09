@@ -24,7 +24,7 @@
         <spring.version>4.3.10.RELEASE</spring.version>
         <spring-boot.version>1.5.6.RELEASE</spring-boot.version>
         <spring-cloud.version>Dalston.SR2</spring-cloud.version>
-        <platform-bom.version>Brussels-SR3</platform-bom.version>
+        <platform-bom.version>Brussels-SR4</platform-bom.version>
     </properties>
 
 
