@@ -11,6 +11,7 @@ please install Java 8 JCE: http://www.oracle.com/technetwork/java/javase/downloa
 * Eureka Registry Server
 * Spring Boot Admin Server
 * Spring Cloud DataFlow Server
+* Trampoline: https://github.com/ErnestOrt/Trampoline 
 
 ### How to start services
 
