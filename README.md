@@ -30,7 +30,8 @@ please install Java 8 JCE: http://www.oracle.com/technetwork/java/javase/downloa
 #### Startup
 
 * docker-compose up -d
-* visit http://localhost:8500/ui/
+* visit http://localhost:8500/ui/ for Consul
+* visit http://localhost:9411/zipkin/ for Zipkin
 
 #### Consul Configuration
 
