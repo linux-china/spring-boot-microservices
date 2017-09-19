@@ -2,7 +2,7 @@ version: '3'
 
 services:
   consul:
-      image: consul
+      image: consul:0.9.3
       ports:
         - "8300:8300"
         - "8301:8301"
@@ -27,3 +27,7 @@ services:
       environment:
          MYSQL_ROOT_PASSWORD: 123456
          MYSQL_DATABASE: spring_cloud
+  zipkin:
+      image: openzipkin/zipkin:1.31.0
+      ports:
+        - "9411:9411"
