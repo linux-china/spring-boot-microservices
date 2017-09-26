@@ -18,7 +18,7 @@
 
     <properties>
         <cloud-dataflow.version>1.2.3.RELEASE</cloud-dataflow.version>
-        <cloud-task.version>1.2.1.RELEASE</cloud-task.version>
+        <cloud-task.version>1.2.2.RELEASE</cloud-task.version>
     </properties>
 
     <dependencies>
