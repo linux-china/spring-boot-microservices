@@ -22,7 +22,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.version>4.3.11.RELEASE</spring.version>
+        <spring.version>5.0.0.RELEASE</spring.version>
         <spring-boot.version>1.5.7.RELEASE</spring-boot.version>
         <spring-cloud.version>Dalston.SR3</spring-cloud.version>
         <platform-bom.version>Brussels-SR4</platform-bom.version>
@@ -58,7 +58,7 @@
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
-                <version>2.2.1</version>
+                <version>2.2.3</version>
                 <executions>
                     <execution>
                         <goals>
