@@ -25,7 +25,7 @@
         <spring.version>5.0.2.RELEASE</spring.version>
         <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
         <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
-        <platform-bom.version>Brussels-SR5</platform-bom.version>
+        <platform-bom.version>Brussels-SR6</platform-bom.version>
     </properties>
 
 
