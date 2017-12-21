@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserService {
             counterService.increment("invoke.error");
             throw new RuntimeException();
         }
-        //100.67.18.140   100.67.12.52:80
         return "nick:" + id;
     }
 
