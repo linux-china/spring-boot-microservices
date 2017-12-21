@@ -14,6 +14,7 @@
         <module>microapp-1</module>
         <module>microapp-2</module>
         <module>microapp-3</module>
+        <module>microapp-hystrix</module>
         <module>zuul-proxy</module>
         <module>sidecar-1</module>
         <module>task-demo</module>
@@ -28,6 +29,27 @@
         <platform-bom.version>Brussels-SR6</platform-bom.version>
     </properties>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.5.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
