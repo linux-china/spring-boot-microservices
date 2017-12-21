@@ -1,7 +1,7 @@
 package org.mvnsearch.app4;
 
 /**
- * Created with IntelliJ IDEA.
+ * user service
  *
  * @author linux_china
  */
