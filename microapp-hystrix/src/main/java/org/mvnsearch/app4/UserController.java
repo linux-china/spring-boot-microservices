@@ -1,6 +1,7 @@
 package org.mvnsearch.app4;
 
 import org.mvnsearch.app4.domain.infra.HttpBinResponse;
+import org.mvnsearch.app4.domain.infra.HttpBinServiceFeignAPI;
 import org.mvnsearch.app4.domain.infra.HttpBinServiceRetrofitAPI;
 import org.mvnsearch.app4.domain.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,8 @@ public class UserController {
     private UserService userService;
     @Autowired
     private HttpBinServiceRetrofitAPI retrofitAPI;
+    @Autowired
+    private HttpBinServiceFeignAPI feignAPI;
 
     @GetMapping("/user/{id}")
     public String welcome(@PathVariable Integer id) {
@@ -32,6 +35,11 @@ public class UserController {
     public String ip() throws IOException {
         Response<HttpBinResponse> response = retrofitAPI.ip().execute();
         return response.body().getIp();
+    }
+
+    @GetMapping("/ip2")
+    public String ip2() throws IOException {
+        return feignAPI.ip().getIp();
     }
 
     @GetMapping("/uuid")
