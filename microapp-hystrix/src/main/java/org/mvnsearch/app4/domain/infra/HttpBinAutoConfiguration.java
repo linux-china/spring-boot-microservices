@@ -1,7 +1,6 @@
 package org.mvnsearch.app4.domain.infra;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import feign.Feign;
 import feign.hystrix.HystrixFeign;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
@@ -33,11 +32,11 @@ public class HttpBinAutoConfiguration {
     }
 
     @Bean
-    public HttpBinServiceFeignAPI httpBinServiceFeignAPI() {
+    public HttpBinServiceFeignAPI httpBinServiceFeignAPI(ObjectMapper objectMapper) {
         return HystrixFeign.builder()
                 .logger(new Slf4jLogger())
-                .encoder(new JacksonEncoder())
-                .decoder(new JacksonDecoder())
+                .encoder(new JacksonEncoder(objectMapper))
+                .decoder(new JacksonDecoder(objectMapper))
                 .target(HttpBinServiceFeignAPI.class, "http://httpbin.org");
     }
 
