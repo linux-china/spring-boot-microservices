@@ -19,7 +19,7 @@ public class HttpBinServiceRetrofitAPITest extends HystrixApplicationBaseTest {
     public void testIp() throws Exception {
         Response<HttpBinResponse> response = httpBinServiceRetrofitAPI.ip().execute();
         if (response.isSuccessful()) {
-            System.out.println(response.body().getOrigin());
+            System.out.println(response.body().getIp());
         }
     }
 
@@ -28,6 +28,14 @@ public class HttpBinServiceRetrofitAPITest extends HystrixApplicationBaseTest {
         Response<HttpBinResponse> response = httpBinServiceRetrofitAPI.headers().execute();
         if (response.isSuccessful()) {
             System.out.println(response.body().getHeaders());
+        }
+    }
+
+    @Test
+    public void testUuid() throws Exception {
+        Response<HttpBinResponse> response = httpBinServiceRetrofitAPI.uuid();
+        if (response.isSuccessful()) {
+            System.out.println(response.body().getUuid());
         }
     }
 }
