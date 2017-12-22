@@ -32,8 +32,9 @@ public class HttpBinAutoConfiguration {
     }
 
     @Bean
-    public HttpBinServiceFeignAPI httpBinServiceFeignAPI(ObjectMapper objectMapper) {
+    public HttpBinServiceFeignAPI httpBinServiceFeignAPI(ObjectMapper objectMapper, OkHttpClient okHttpClient) {
         return HystrixFeign.builder()
+                .client(new feign.okhttp.OkHttpClient(okHttpClient))
                 .logger(new Slf4jLogger())
                 .encoder(new JacksonEncoder(objectMapper))
                 .decoder(new JacksonDecoder(objectMapper))
