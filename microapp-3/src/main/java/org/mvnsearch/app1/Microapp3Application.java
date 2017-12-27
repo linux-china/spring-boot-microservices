@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.sleuth.zipkin.ZipkinSpanReporter;
+import org.springframework.cloud.sleuth.SpanReporter;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
@@ -21,11 +21,11 @@ public class Microapp3Application {
     /**
      * Use this for debugging (or if there is no Zipkin server running on port 9411)
      *
-     * @return  zipkin span reporter
+     * @return zipkin span reporter
      */
     @Bean
     @ConditionalOnProperty(value = "sample.zipkin.enabled", havingValue = "false")
-    public ZipkinSpanReporter spanCollector() {
+    public SpanReporter spanCollector() {
         return span -> log.info(String.format("Reporting span [%s]", span));
     }
 }
