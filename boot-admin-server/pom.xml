@@ -16,7 +16,7 @@
     <name>boot-admin-server</name>
     <description>Spring Boot admin Server</description>
     <properties>
-        <spring-boot-admin.version>1.5.5</spring-boot-admin.version>
+        <spring-boot-admin.version>1.5.6</spring-boot-admin.version>
     </properties>
 
     <dependencies>
