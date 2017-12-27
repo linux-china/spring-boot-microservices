@@ -1,7 +1,12 @@
 package org.mvnsearch.app4.domain.infra;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.netflix.hystrix.HystrixCommand;
+import feign.RequestInterceptor;
+import feign.RequestTemplate;
+import feign.Target;
 import feign.hystrix.HystrixFeign;
+import feign.hystrix.SetterFactory;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
 import feign.slf4j.Slf4jLogger;
@@ -11,6 +16,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
+
+import java.lang.reflect.Method;
 
 /**
  * httpbin auto configuration
