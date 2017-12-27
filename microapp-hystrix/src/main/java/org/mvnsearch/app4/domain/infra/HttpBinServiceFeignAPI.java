@@ -12,4 +12,7 @@ public interface HttpBinServiceFeignAPI {
     @RequestLine("GET /ip")
     HttpBinResponse ip();
 
+    @RequestLine("GET /uuid")
+    HttpBinResponse uuid();
+
 }
