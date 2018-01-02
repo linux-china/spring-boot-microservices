@@ -44,6 +44,8 @@ Consul Key/Value支持的Spring config Server目录结构如下：
 
 接下来就是在这些目录下创建对应的Key/Value。
 
+* MicroServices with Consul: https://www.infoq.com/articles/Microservices-SpringBoot
+
 ### Tips
 
 * 不同Spring Boot加载的配置问题，可以通过 --spring.profiles.active=15X 来激活全局的 application-15X.properties这样
