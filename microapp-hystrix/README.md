@@ -3,6 +3,10 @@ MicroApp-hystrix
 MicroApp to test Hiystrix integration
 
 
+### Retrofit
+
+* Change destination dynamically(load balance): https://gist.github.com/swankjesse/8571a8207a5815cca1fb
+
 ### UI
 please visit http://localhost:8080/hystrix
 
