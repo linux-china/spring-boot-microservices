@@ -1,0 +1,11 @@
+GET http://localhost:3126/httpbin/ip
+Host: httpbin.org
+
+###
+GET http://httpbin.org/ip
+Host: httpbin.org
+
+###
+GET http://localhost:3126/welcome
+
+###
