@@ -11,6 +11,6 @@ spring:
   cloud:
     dataflow:
       features:
-        skipper-enabled: true
+        skipper-enabled: false
 server:
   port: 9393
