@@ -18,6 +18,7 @@
         <module>microapp-proxy</module>
         <module>microapp-hystrix</module>
         <module>zuul-proxy</module>
+        <module>cloud-gateway</module>
         <module>sidecar-1</module>
         <module>task-demo</module>
     </modules>
