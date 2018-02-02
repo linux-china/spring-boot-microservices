@@ -2,7 +2,7 @@ version: '3'
 
 services:
   consul:
-      image: consul:0.9.3
+      image: consul:1.0.3
       ports:
         - "8300:8300"
         - "8301:8301"
@@ -11,7 +11,7 @@ services:
         - "8500:8500"
         - "8600:53/udp"
   redis:
-      image: redis
+      image: redis:4.0.7-alpine
       ports:
         - "6379:6379"
 #  zookeeper:
@@ -21,7 +21,7 @@ services:
 #        - "2888:2888"
 #        - "3888:3888"
   mysql:
-      image: mysql
+      image: mysql:5.7.21
       ports:
         - "3306:3306"
       environment:
