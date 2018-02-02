@@ -1,0 +1,6 @@
+server:
+  port: 7171
+
+spring:
+  application:
+    name: cloud-gateway
