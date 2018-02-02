@@ -8,6 +8,9 @@ spring:
     url: jdbc:mysql://localhost:3306/spring_cloud?useSSL=false&useUnicode=true&characterEncoding=UTF-8
   redis:
     host: 127.0.0.1
-
+  cloud:
+    dataflow:
+      features:
+        skipper-enabled: true
 server:
   port: 9393
