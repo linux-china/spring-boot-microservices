@@ -11,10 +11,11 @@
         <module>cloud-config-server</module>
         <module>cloud-registry-server</module>
         <module>cloud-data-flow-server</module>
+        <module>cloud-skipper-server</module>
         <module>microapp-1</module>
         <module>microapp-2</module>
         <module>microapp-3</module>
-        <!--<module>microapp-proxy</module>-->
+        <module>microapp-proxy</module>
         <module>microapp-hystrix</module>
         <module>zuul-proxy</module>
         <module>sidecar-1</module>
