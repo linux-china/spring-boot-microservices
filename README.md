@@ -11,7 +11,11 @@ please install Java 8 JCE: http://www.oracle.com/technetwork/java/javase/downloa
 * Eureka Registry Server
 * Spring Boot Admin Server
 * Spring Cloud DataFlow Server
-* Trampoline: https://github.com/ErnestOrt/Trampoline 
+* Spring Cloud Skipper Ser
+* Spring Cloud Gateway
+* Zull Reverse Proxy
+* Charon Reverse Proxy
+* Spring Cloud Hystrix
 
 ### How to start services
 
