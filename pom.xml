@@ -29,7 +29,8 @@
         <spring.version>5.0.7.RELEASE</spring.version>
         <spring-boot.version>1.5.14.RELEASE</spring-boot.version>
         <spring-cloud.version>Edgware.SR3</spring-cloud.version>
-        <platform-bom.version>Brussels-SR10</platform-bom.version>
+        <platform-bom.version>Brussels-SR11</platform-bom.version>
+        <jackson.version>2.9.6</jackson.version>
     </properties>
 
 
@@ -46,7 +47,7 @@
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>1.5.19</version>
+            <version>1.5.20</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -62,6 +63,7 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <parameters>true</parameters>
                 </configuration>
             </plugin>
             <plugin>
@@ -104,7 +106,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
-                <version>2.9.5</version>
+                <version>${jackson.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
