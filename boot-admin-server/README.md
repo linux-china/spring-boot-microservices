@@ -2,8 +2,8 @@ Spring Boot Admin Server
 ==================================
 Admin UI for administration of spring boot applications.
 
-### Howo to start server
-Spring Boot Admin Server integrats with Eureka to fetch applications.
+### how to start server
+Spring Boot Admin Server integrates with Eureka to fetch applications.
 
 * Start Eureka Server first
 * Start Spring Boot Admin Server.
