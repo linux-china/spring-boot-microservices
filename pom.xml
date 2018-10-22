@@ -26,11 +26,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.version>5.0.7.RELEASE</spring.version>
-        <spring-boot.version>1.5.14.RELEASE</spring-boot.version>
-        <spring-cloud.version>Edgware.SR3</spring-cloud.version>
-        <platform-bom.version>Brussels-SR11</platform-bom.version>
-        <jackson.version>2.9.6</jackson.version>
+        <spring.version>5.0.10.RELEASE</spring.version>
+        <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
+        <spring-cloud.version>Edgware.SR5</spring-cloud.version>
+        <platform-bom.version>Brussels-SR14</platform-bom.version>
+        <jackson.version>2.9.7</jackson.version>
     </properties>
 
 
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>16.0.1</version>
+            <version>16.0.2</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -47,7 +47,7 @@
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>1.5.20</version>
+            <version>1.5.21</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -59,7 +59,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
