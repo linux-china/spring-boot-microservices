@@ -20,9 +20,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <retrofit.version>2.4.0</retrofit.version>
-        <okhttp3.version>3.10.0</okhttp3.version>
-        <openfeign.version>9.6.0</openfeign.version>
+        <retrofit.version>2.5.0</retrofit.version>
+        <okhttp3.version>3.14.0</okhttp3.version>
+        <openfeign.version>10.2.3</openfeign.version>
     </properties>
 
     <dependencies>
@@ -74,35 +74,30 @@
             <artifactId>converter-jackson</artifactId>
             <version>${retrofit.version}</version>
         </dependency>
+        <!-- openfeign-->
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-core</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-hystrix</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-okhttp</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-slf4j</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-java8</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-jackson</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <!--jackson-->
         <dependency>
@@ -116,5 +111,17 @@
         </dependency>
 
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-bom</artifactId>
+                <version>${openfeign.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
